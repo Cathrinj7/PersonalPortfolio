@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d519d1a631.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div id="header">
+  
+    <div class="container">
+        <nav>
+            <div class="text-animation">
+            <h1><Span>C</Span>athrin's Portfolio</h1>
+        </div>
+            <ul id="sidemenu">
+
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#projects">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div  class="header-text">
+                 <h1>Hi, I'm  <span>Cathrine,</span></h1>
+
+        </div>
+    </div>
+   </div> 
+   <!-----about-->
+<div id="about">
+  <div class="container">
+    <div class="row">
+        <div class="about-col-1"> 
+            <p>I’m Cathrine. A dedicated learner who embraces continuous growth and adaptation.<br> Aiming to excel in the dynamic and highly
+                competitive world of corporate.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link " onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                       
+                </div> 
+
+                <div class="tab-contents active-tab" id="education">
+                    <ul>
+                        <li><span>2019-2023</span><br>J.J College Of Engineering And Technology<br>B.E - 8.7 CGPA</li>
+                        <li><span>2018-2019</span><br>St.Philomena's Girl's Hr.Sec.School<br>XII - 72%</li>
+                        <li><span>2016-2017</span><br>St.Philomena's Girl's Hr.Sec.School<br>X - 95%</li>
+                    </ul>
+                </div>   
+
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br>Core Java, Servlet, JDBC,JavaScript(Basics)</li>
+                        <li><span>DBMS</span><br>MySql</li>
+                        <li><span>Working With</span><br>Eclipse IDE,MS Office(excel)</li>
+
+                    </ul>
+                </div>  
+  
+       
+       
+            </div>
+
+    </div>
+  </div>
+
+</div>
+
+
+
+<!--portfolio-->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/books.png">
+                <div class="layer">
+                    <h3>Book Registration Webpage</h3>
+                    <p>Created a "Book Registration Webpage" utilizing Java Servlet, JDBC, SQL, Tomcat, HTML, and Bootstrap. Enables users to
+                        register books, view booklists, and perform edit and delete operations.<br>
+                        Technologies Used : Java Servlet, JDBC, MySql, Tomcat 10.1 , Html and Bootstrap.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/acc.jpg">
+                <div class="layer">
+                    <h3>Road Accident Dashboard</h3>
+                    <p>Created a Road Accident Dashboard in Excel to efficiently analyze and visualize accident data through systematic data cleaning, filtering, processing, and visualization techniques.<br>
+                        Technologies Used: Microsoft Excel.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+      <!-- <a href="#"  class="btn">See more</a>--> 
+    </div>
+</div>
+
+
+
+<!-----certifications-->
+
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">Certifications</h1>
+        <div class="projects-list">
+            <div>
+        
+
+                <h2>INDUSTRY 4.0 CERTIFICATION: (Nov - Dec, 2022)</h2>
+                <p>Industry 4.0 Certification earned from Skilllyn through the Naan Mudhalvan scheme, highlighting proficiency in IoT
+                    applications (basic).<br>
+                    Technologies Used: Arduino IDE, ThingSpeak, Wowki simulator.
+                    </p>
+                    
+            </div>
+            <div>
+                
+                <h2>INTERNATIONAL ASTRONOMICAL SEARCH COLLABORATION: (Sep 21 - Oct 17, 2022)</h2>
+                <p>I participated in IASC to analyze images of asteroids and near-Earth objects transmitted by the PAN-STARR using the
+                    Astrometrica software.<br>
+                    Technologies Used: Astrometrica Software.
+                    </p>
+                    
+
+            </div>
+            <div>
+
+                <h2>INTERNATIONAL CONFERENCE: (29-4-22)</h2>
+                <p>I Presented my research on “ Real-Time Collision--Free Path Planning for UAV using Evolutionary Algorithms” at an
+                international conference
+                    </p>
+                    
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-square-phone"></i>cathrinj13@gmail.com</p>
+                <p><i class="fa-solid fa-envelope"></i>9345864482</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/cathrin7"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Cathrinj7"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/Cathrine.pdf" download class="btn btn2"> Download CV</a>
+                 
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet" >
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message"  rows="7" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Sumbit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+
+        </div>
+    </div>
+    
+</div>
+
+
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxT7lyCpjCZdyksUtrs7bg2MlBHm8ll4zmzsFY_wwCtaLtUNvad5ew2q5qxJ29XPW86pQ/exec'
+   
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML= "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML= " "
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html> 
